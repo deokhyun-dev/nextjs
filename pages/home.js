@@ -7,25 +7,11 @@ import ItemList from "../src/component/ItemList";
 import { Divider, Header } from "semantic-ui-react";
 import Loading from "../src/component/Loader";
 
-export default function Home({ list }) {
-  // const [list, setList] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
-  // const API_URL = process.env.NEXT_PUBLIC_API_URL;
-
-  // function getData() {
-  //   Axios.get(API_URL).then((res) => {
-  //     setList(res.data);
-  //     setIsLoading(false);
-  //   });
-  // }
-
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
+export default function Home({ list, name }) {
   return (
     <div>
       <>
+        <div>{name}</div>
         <Head>
           <title>Home | nextjs</title>
         </Head>
