@@ -3,12 +3,11 @@ import Link from "next/link";
 import Gnb from "./Gnb";
 
 export default function Top() {
-  const activeItem = "home";
   return (
     <>
       <div>
         <div style={{ display: "flex", paddingTop: 30 }}>
-          <Link href={"/"}>
+          <Link href={"/home"} as={"/home"}>
             <div style={{ flex: "100px 0 0" }}>
               <img
                 src="/images/dune.png"
